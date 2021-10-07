@@ -260,6 +260,10 @@
       font-size: 1.7rem;
       padding: 1.25rem 2rem;
     }
+
+    @media only screen and (max-width: $bp-xs) {
+      padding: 0.9rem 1rem;
+    }
   }
 
   &__stars {
@@ -272,12 +276,21 @@
     width: 1.75rem;
     height: 1.75rem;
     fill: var(--color-primary);
+
+    @media only screen and (max-width: $bp-xs) {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 
   &__location {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $bp-xs) {
+      margin-right: 0.5rem;
+    }
   }
 
   &__icon-location {
@@ -299,6 +312,11 @@
     @media only screen and (max-width: $bp-small) {
       padding: 0 1.5rem;
     }
+
+    @media only screen and (max-width: $bp-xs) {
+      margin-left: 1rem;
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
@@ -317,6 +335,7 @@
 
     @media only screen and (max-width: $bp-small) {
       font-size: 0.5rem;
+      text-align: center;
     }
   }
 }
@@ -387,12 +406,20 @@
   border-top: var(--line);
   border-bottom: var(--line);
 
+  @media only screen and (max-width: $bp-xs) {
+    padding: 2rem 1rem;
+  }
+
   display: flex;
   flex-wrap: wrap;
 
   &__item {
     flex: 0 0 50%;
     margin-bottom: 0.7rem;
+
+    @media only screen and (max-width: $bp-xs) {
+      padding-right: 0.3rem;
+    }
   }
 
   &__item::before {
@@ -534,6 +561,10 @@
     font-weight: 300;
     margin-bottom: 2.5rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-xs) {
+      font-size: 1.7rem;
+    }
   }
 }
 
